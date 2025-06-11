@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.blogheader {
+  margin: 2px;
+  position: relative;
+}
+.blogheader .blogheaderBtn {
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.blogheader .blogheaderBtn a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+.blogheader .blogheaderBtn a:hover {
+  background-color: transparent;
+  color: white;
+}
+.blogheader .blogheaderOverlay {
+  max-width: 100%;
+  height: 95vh;
+  overflow-x: hidden;
+}
+.blogheader .blogheaderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.blogheader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.712);
+  z-index: 1;
+}
+.blogheader .blogheaderMainTitle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-size: 18px;
+  font-family: Times;
+  transform: translate(-50%, -50%);
+}
+.blogheader .blogheaderSubTitle {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  font-size: 25px;
+  transform: translate(-50%, -50%);
+}
+.blogheader .blogheaderSubTitle .blogheaderSubTitle1 {
+  font-size: 27px;
+}
+.blogheader .blogheaderSubTitle .blogheaderSubTitle2 {
+  font-style: italic;
+  font-size: 17px;
+}
+
+.blogmainNav {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  color: white;
+  margin: 2px;
+}
+.blogmainNav .blogmainNavContainer1 {
+  flex: 1;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+}
+.blogmainNav .blogmainNavContainer2 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.blogmainNav .blogmainNavContainer2 ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.blogmainNav .blogmainNavContainer2 ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.blogmainNav .blogmainNavContainer2 ul li a:hover {
+  color: #f0a500;
+}
+
+.blogSectionOneCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+.blogSectionOneCard .blogSectionOneCard1 {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 32px rgba(0, 0, 0, 0.664);
+  background-color: #fff;
+}
+.blogSectionOneCard .blogSectionOneCard1 .blogSectionOneCard1Flex1 {
+  flex: 0 0 40%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 20rem;
+}
+.blogSectionOneCard .blogSectionOneCard1 .blogSectionOneCard1Flex1 .blogSectionOneCard1Flex1Img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+.blogSectionOneCard .blogSectionOneCard1 .blogSectionOneCard1Flex2 {
+  flex: 0 0 10%;
+  font-size: 12px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.103);
+  padding-top: 1rem;
+}
+.blogSectionOneCard .blogSectionOneCard1 .blogSectionOneCard1Flex2 .blogSectionOneCard1Flex2Heading {
+  font-family: Times;
+}
+.blogSectionOneCard .blogSectionOneCard1 .blogSectionOneCard1Flex3 {
+  flex: 0 0 4%;
+  font-family: Times;
+  text-align: justify;
+}
+.blogSectionOneCard .blogSectionOneCard1 .blogSectionOneCard1Flex4 {
+  flex: 0 0 10%;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  text-align: right;
+}
+.blogSectionOneCard .blogSectionOneCard1 .blogSectionOneCard1Flex4 .blogSectionOneCard1Flex4Btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #007bff;
+  background-color: transparent;
+  color: #007bff;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.blogSectionOneCard .blogSectionOneCard1 .blogSectionOneCard1Flex4 .blogSectionOneCard1Flex4Btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.blogSectionOneCard .blogSectionOneCard1:hover {
+  background-color: rgba(37, 72, 106, 0.2588235294);
+}
+.blogSectionOneCard .blogSectionOneCard2 {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 32px rgba(0, 0, 0, 0.664);
+  background-color: #fff;
+}
+.blogSectionOneCard .blogSectionOneCard2 .blogSectionOneCard2Flex1 {
+  flex: 0 0 40%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 20rem;
+}
+.blogSectionOneCard .blogSectionOneCard2 .blogSectionOneCard2Flex1 .blogSectionOneCard2Flex1Img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+.blogSectionOneCard .blogSectionOneCard2 .blogSectionOneCard2Flex2 {
+  flex: 0 0 10%;
+  font-size: 12px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.103);
+  padding-top: 1rem;
+}
+.blogSectionOneCard .blogSectionOneCard2 .blogSectionOneCard2Flex2 .blogSectionOneCard2Flex2Heading {
+  font-family: Times;
+}
+.blogSectionOneCard .blogSectionOneCard2 .blogSectionOneCard2Flex3 {
+  flex: 0 0 4%;
+  font-family: Times;
+  text-align: justify;
+}
+.blogSectionOneCard .blogSectionOneCard2 .blogSectionOneCard2Flex4 {
+  flex: 0 0 10%;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  text-align: right;
+}
+.blogSectionOneCard .blogSectionOneCard2 .blogSectionOneCard2Flex4 .blogSectionOneCard2Flex4Btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #007bff;
+  background-color: transparent;
+  color: #007bff;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.blogSectionOneCard .blogSectionOneCard2 .blogSectionOneCard2Flex4 .blogSectionOneCard2Flex4Btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.blogSectionOneCard .blogSectionOneCard2:hover {
+  background-color: rgba(37, 72, 106, 0.2588235294);
+}
+.blogSectionOneCard .blogSectionOneCard3 {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 32px rgba(0, 0, 0, 0.664);
+  background-color: #fff;
+}
+.blogSectionOneCard .blogSectionOneCard3 .blogSectionOneCard3Flex1 {
+  flex: 0 0 40%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 20rem;
+}
+.blogSectionOneCard .blogSectionOneCard3 .blogSectionOneCard3Flex1 .blogSectionOneCard3Flex1Img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+.blogSectionOneCard .blogSectionOneCard3 .blogSectionOneCard3Flex2 {
+  flex: 0 0 10%;
+  font-size: 12px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.103);
+  padding-top: 1rem;
+}
+.blogSectionOneCard .blogSectionOneCard3 .blogSectionOneCard3Flex2 .blogSectionOneCard3Flex2Heading {
+  font-family: Times;
+}
+.blogSectionOneCard .blogSectionOneCard3 .blogSectionOneCard3Flex3 {
+  flex: 0 0 4%;
+  font-family: Times;
+  text-align: justify;
+}
+.blogSectionOneCard .blogSectionOneCard3 .blogSectionOneCard3Flex4 {
+  flex: 0 0 10%;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  text-align: right;
+}
+.blogSectionOneCard .blogSectionOneCard3 .blogSectionOneCard3Flex4 .blogSectionOneCard3Flex4Btn {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #007bff;
+  background-color: transparent;
+  color: #007bff;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.blogSectionOneCard .blogSectionOneCard3 .blogSectionOneCard3Flex4 .blogSectionOneCard3Flex4Btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.blogSectionOneCard .blogSectionOneCard3:hover {
+  background-color: rgba(37, 72, 106, 0.2588235294);
+}
+
+/*# sourceMappingURL=main.css.map */

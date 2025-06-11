@@ -1,0 +1,44 @@
+.blogmainNav {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  color: white;
+  margin: 2px;
+
+
+  .blogmainNavContainer1 {
+    flex: 1;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .blogmainNavContainer2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+          color: #f0a500;
+        }
+      }
+    }
+  }
+}

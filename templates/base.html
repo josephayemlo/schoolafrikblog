@@ -1,0 +1,28 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolAfrik Blog</title>
+    <link rel="stylesheet" href=" {% static 'css/main.css' %}" />
+</head>
+<body>
+    <!-- Making Header excludable in any page -->
+    {% block header %} 
+    {% include 'includes/header.html' %} 
+    {% endblock header %}
+
+    <!-- Main body  Start -->
+    <div>
+        {% block content %}
+        {% endblock content%}
+    </div>                
+    <!-- Main body  End -->
+
+    <!-- Making footer excludable in any page -->
+    {% block footer %} 
+    {% include 'includes/footer.html' %} 
+    {% endblock footer %}
+</body>
+</html>

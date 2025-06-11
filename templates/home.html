@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="blogSectionOneCard">
+        <div class="blogSectionOneCard1">
+            <div class="blogSectionOneCard1Flex1"><img src="{% static 'images/img1.jpg' %}" alt="Image" class="blogSectionOneCard1Flex1Img"></div>
+            <div class="blogSectionOneCard1Flex2"><h1 class="blogSectionOneCard1Flex2Heading">My life as an Undergraduat Student</h1></div>
+            <div class="blogSectionOneCard1Flex3"><p></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsa, dolores eos quaerat at maiores obcaecati nobis nam voluptatibus repellat unde excepturi libero esse, similique officiis, eligendi illum quibusdam eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusamus optio doloribus modi dolore dolores velit, praesentium ipsa voluptates tempora porro iste suscipit accusantium officia consequatur laudantium perferendis ipsam perspiciatis.</div>
+            <div class="blogSectionOneCard1Flex4"><a href="" class="blogSectionOneCard1Flex4Btn">Read More</a></div>
+        </div>
+        <div class="blogSectionOneCard2">
+            <div class="blogSectionOneCard2Flex1"><img src="{% static 'images/img3.jpeg' %}" alt="Image" class="blogSectionOneCard2Flex1Img"></div>
+            <div class="blogSectionOneCard2Flex2"><h1 class="blogSectionOneCard2Flex2Heading">My life as an Undergraduat Student</h1></div>
+            <div class="blogSectionOneCard2Flex3"><p></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsa, dolores eos quaerat at maiores obcaecati nobis nam voluptatibus repellat unde excepturi libero esse, similique officiis, eligendi illum quibusdam eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusamus optio doloribus modi dolore dolores velit, praesentium ipsa voluptates tempora porro iste suscipit accusantium officia consequatur laudantium perferendis ipsam perspiciatis.</div>
+            <div class="blogSectionOneCard2Flex4"><a href="" class="blogSectionOneCard2Flex4Btn">Read More</a></div>         
+        </div>
+        <div class="blogSectionOneCard3">
+            <div class="blogSectionOneCard3Flex1"><img src="{% static 'images/img5.jpg' %}" alt="Image" class="blogSectionOneCard3Flex1Img"></div>
+            <div class="blogSectionOneCard3Flex2"><h1 class="blogSectionOneCard3Flex2Heading">My life as an Undergraduat Student</h1></div>
+            <div class="blogSectionOneCard3Flex3"><p></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsa, dolores eos quaerat at maiores obcaecati nobis nam voluptatibus repellat unde excepturi libero esse, similique officiis, eligendi illum quibusdam eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusamus optio doloribus modi dolore dolores velit, praesentium ipsa voluptates tempora porro iste suscipit accusantium officia consequatur laudantium perferendis ipsam perspiciatis.</div>
+            <div class="blogSectionOneCard3Flex4"><a href="" class="blogSectionOneCard3Flex4Btn">Read More</a></div>
+        </div>     
+    </section>
+    <a href="{% url 'admin' %}">Admin Dashboard</a>
+{% endblock content%}

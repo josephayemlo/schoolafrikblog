@@ -1,0 +1,5 @@
+This is a Complete Blog Web Application that aims towards CRUD operations
+The Application adopt Function Based View and not Class Based View
+
+Functionality
+Create, Read, Update, and Delete Post
