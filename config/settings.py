@@ -20,7 +20,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog'
+    'blog',
+    "django_ckeditor_5",
 ]
 
 MIDDLEWARE = [
@@ -85,3 +86,29 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+# Django CKEDITOR Settings
+CKEDITOR_5_FILE_STORAGE = "django.core.files.storage.FileSystemStorage"
+CKEDITOR_5_CONFIGS = {
+    'default': {
+        'toolbar': [
+            'heading', '|', 'bold', 'italic', 'link', 'bulletedList',
+            'numberedList', '|', 'outdent', 'indent', '|',
+            'imageUpload', 'blockQuote', 'insertTable', 'mediaEmbed',
+            'undo', 'redo',
+        ],
+        'image': {
+            'toolbar': [
+                'imageTextAlternative', 'imageStyle:full', 'imageStyle:side'
+            ]
+        },
+        'table': {
+            'contentToolbar': ['tableColumn', 'tableRow', 'mergeTableCells']
+        },
+    }
+}
+

@@ -1,14 +1,35 @@
 {% extends 'base.html' %}
     {% block content %}
     <title>{{ post.title }}</title>
-</head>
-<body>
-    <h1>{{ post.title }}</h1>
-    <p>{{ post.content }}</p>
+    {% include 'includes/nav.html' %}
+
+    <!-- Excluding Header -->
+    {% block header %} 
+    {% endblock header %}
+
     
     <a href="{% url 'blogpost_update' post.pk %}">Edit</a>
     <a href="{% url 'blogpost_delete' post.pk %}">Delete</a>
 
     <a href="{% url 'blogpost_list' %}">Back to list</a>
+
+    <section class="blogpostDetails">
+        <div class="blogpostDetailsContainer">
+            <h1 class="blogpostDetailsContainerCategory"></h1>
+            <h1 class="blogpostDetailsContainerHeading"> {{ post.title }}</h1></h1>
+            <div class="blogpostDetailsContainerAuthor"></div>
+            <img src="" alt="" class="blogpostDetailsContainerImg">
+            <div class="blogpostDetailsContainerPost">
+                <div class="post-content"> {{ post.content |safe }} </div>
+                <!-- safe is used because of ckeditor to ignore the HTML it uses and not to parse the html to the page -->
+
+            </div>
+
+        </div>
+        <div class="blogpostDetailsSidebar" >
+
+        </div>
+
+    </section>
 
     {% endblock content%}

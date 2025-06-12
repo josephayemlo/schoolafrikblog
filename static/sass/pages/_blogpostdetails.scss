@@ -1,0 +1,25 @@
+
+.blogpostDetails{
+    display: flex;
+
+    .blogpostDetailsContainer{
+
+        flex: 0 0 70%;
+        text-align: justify;
+
+    }
+    .blogpostDetailsSidebar{
+        flex: 0 0 30%;
+
+
+    }
+}
+
+.post-content img {
+    max-width: 100%;      /* Image won't exceed the container width */
+    height: auto;         /* Keeps the aspect ratio */
+    display: block;       /* Removes extra spacing below image */
+    margin: 1rem auto;    /* Optional: center the image */
+    border-radius: 8px;   /* Optional: soft corners */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}

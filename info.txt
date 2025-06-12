@@ -3,3 +3,6 @@ The Application adopt Function Based View and not Class Based View
 
 Functionality
 Create, Read, Update, and Delete Post
+
+tools used
+> django ckeditor-5
