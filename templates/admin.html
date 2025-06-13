@@ -6,6 +6,22 @@
 <!-- Excluding Header -->
 {% block header %} 
 {% endblock header %}
+
+    <section class="admin">
+        <div class="adminSideNav">
+            <div class="logo">AdminPanel</div>
+            <ul class="navLinks">
+                <li><a href="#"><i class="icon">🏠</i> Dashboard</a></li>
+                <li><a href="{% url 'blogpost_list' %}"><i class="icon">📝</i> Posts</a></li>
+                <li><a href="#"><i class="icon">👥</i> Users</a></li>
+                <li><a href="#"><i class="icon">⚙️</i> Settings</a></li>
+                <li><a href="#"><i class="icon">🚪</i> Logout</a></li>
+            </ul>
+        </div>
+        <div class="adminContent"></div>
+    </section>
+
+
     <h1>Admin</h1>
     <a href="{% url 'home' %}">Home</a>
     <a href="{% url 'blogpost_create' %}">Add Post</a>

@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
     {% block content %}
+
+<!-- Excluding Header -->
+{% block header %} 
+{% endblock header %}
     <h1>All Blog Posts</h1>
     <a href="{% url 'blogpost_create' %}">Create New Post</a>
     <ul>
@@ -12,4 +16,41 @@
             <li>No posts available.</li>
         {% endfor %}
     </ul>
+
+    <div class="blog-table-container">
+        <table class="blog-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Date</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Understanding React Basics</td>
+              <td>Jane Doe</td>
+              <td>2025-06-13</td>
+              <td>
+                <button class="view-btn">View</button>
+                <button class="edit-btn">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Django vs Flask: A Comparison</td>
+              <td>John Smith</td>
+              <td>2025-06-12</td>
+              <td>
+                <button class="view-btn">View</button>
+                <button class="edit-btn">Edit</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
     {% endblock content%}
